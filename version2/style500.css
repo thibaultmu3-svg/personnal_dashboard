@@ -1,0 +1,52 @@
+@media (min-width: 500px) {/* ap artir de la ca devient telephone*/
+
+    .header .app-name {
+        display: none;
+    }
+
+    .header .settings {
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar {
+        width: 70%;
+    }
+
+
+    .content#home {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+        "box1 box3 box3"
+        "box5 box5 box2"
+        "box4 box4 box2";
+        gap: 8px;
+    }
+
+
+    #welcom {
+        display: block;
+    }
+
+    #photo1 {
+        display: block;
+    }
+
+    #photo2 {
+        display: none;
+    }
+
+    #day {
+        display: block;
+    }
+
+    #stats {
+        display: block;
+    }
+
+    #week {
+        display: block;
+    }
+}

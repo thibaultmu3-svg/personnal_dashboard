@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserra',Arial, sans-serif;
+    color: rgb(75, 72, 66);
+}
+
+/* inchangé */
+body {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    background: linear-gradient(140deg,rgb(202, 202, 200),rgb(228, 227, 214), rgb(189, 183, 136)) no-repeat;
+}
+
+/* inchangé */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem 0 1rem;
+    margin-bottom: 1rem;
+}
+
+
+.header .app-name {
+    border: solid 1px rgb(75, 72, 66);
+    border-radius: 1.2rem;
+    background-color: transparent; /* effet glass si possible */
+    height: 100%;
+    padding: 0 0.8rem 0 0.8rem;
+    cursor: default;
+}
+
+
+/* va devoir adapter la navbar en fonction du media */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(248, 247, 240);
+    border-radius: 1.2rem;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 1px;
+}
+
+
+.navbar .active {
+    background-color: rgb(75, 72, 66);
+    color: white;
+}
+
+
+.navbar div:nth-child(n) {
+    height: 100%;
+    padding: 0 0.8rem 0 0.8rem;
+    display: flex;
+    align-items: center;
+    border-radius: 1.2rem;
+    cursor: pointer;
+}
+
+
+.header .settings {
+    background-color: rgb(248, 247, 240);
+    border-radius: 1.2rem;
+    height: 100%;
+    padding: 0 0.8rem 0 0.8rem;
+    cursor: pointer;
+}
+
+
+/* encore style la partie navbar*/
+
+.content {
+    display: none;
+}
+
+
+.content.active {
+    display: block;
+}
+.card {
+    background-color: rgb(248, 247, 240);
+    border-radius: 1rem;
+}
+
+#home #welcom,#day,#week,#stats {
+    padding: 1rem;
+}
+
+
+#home #welcom h1 {
+    font-weight: 350;
+    font-size: 3rem;
+    cursor: default;
+} 
+
+
+#home #welcom h5 {
+    font-weight: 300;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    cursor: default;
+} 
+
+
+.circle {
+    aspect-ratio: 1;
+    height: 100px;
+    background-color: red;
+}
+
+
+.graph {
+    aspect-ratio: 2/1;
+    width: 200px;
+    background-color: green;
+}
+
+
+.card#phot1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: none;
+}
+
+
+.card img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.85;
+    object-fit: cover;
+    display: block;
+    border-radius: 1rem;
+}
+

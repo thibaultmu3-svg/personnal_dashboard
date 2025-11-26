@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="style100.css">
+    <link rel="stylesheet" href="style500.css">
+    <link rel="stylesheet" href="style1200.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="app-name">Organiser</div>
+        <div class="navbar">
+            <div id="home"    class="active">home</div>
+            <div id="study"   class="">study</div>
+            <div id="calendar"class="">calendar</div>
+            <div id="to-do"   class="">to-do</div>
+        </div>
+        <div class="settings">
+            <!-- logo -->
+            <p>Settings</p>
+        </div>
+    </div>
+
+    <div class="content active" id="home"> 
+
+        <div class="card" id="welcom" style="grid-area: box1">
+            <h1>Welcom,</h1>
+            <h5 id="Name">Name</h5>
+            <p class="todays-date">We are the <span id="datum">25 november.</span></p>
+        </div>
+
+        <div class="card" id="photo1" style="grid-area: box2">
+            <!-- trouver une image plus interessante que ca  -->
+             <img src="/UI/UX_inspi/1356747.jpeg" alt="">
+        </div>
+
+        <div class="card" id="day" style="grid-area: box3">
+            
+            <div class="circle"></div>
+        </div>
+        
+        <div class="card" id="stats" style="grid-area: box4">
+            
+            <div class="graph"></div>
+        </div>
+
+        <div class="card" id="week" style="grid-area: box5">
+            
+            <div class="circle"></div>
+        </div>
+
+        <div class="card" id="photo2" style="grid-area: box6">
+            <!-- ajouter une imgae avec JavaScript -->
+             
+        </div>
+
+    </div>
+
+    <div class="content" id="study">
+
+    </div>
+
+    <div class="content" id="calendar">
+
+    </div>
+
+    <div class="content" id="to-do">
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

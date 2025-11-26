@@ -1,0 +1,52 @@
+@media (min-width: 1200px) {
+
+    .header .app-name {
+        display: flex;
+        align-items: center;
+    }
+
+    .header .settings {
+        display: flex;
+        align-items: center;
+    }
+    
+    .navbar {
+        width: 50%;
+    }
+
+
+    .content#home {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        "box1 box2 box3 box3"
+        "box4 box4 box5 box5";
+        gap: 0.6rem;
+    }
+
+
+    #welcom {
+        display: block;
+    }
+
+    #photo1 {
+        display: block;
+    }
+
+    #photo2 {
+        display: none;
+    }
+
+    #day {
+        display: block;
+    }
+
+    #stats {
+        display: block;
+    }
+
+    #week {
+        display: block;
+    }
+}
