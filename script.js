@@ -7,13 +7,17 @@ moveHighlight(navbar_active)
 navbarElements.forEach((el) => {
     el.addEventListener("click", () => { // on verra si ajout pour la tablette car ca avait fonctionné a un moment
 
+        if (el === navbar_active) return;// verifie si deja actif
         //partie navbar
         navbar_active.classList.remove("active")
 
         moveHighlight(el)
 
-        const onTransitionEnd = () => {
-            el.classList.add("active")
+        const onTransitionEnd = (event) => {
+            // Vérifie que c’est la pastille qui a fini sa transition
+            if (event.target !== highlight) return
+
+            el.classList.add("active")               // ajouter active au nouveau bouton
             highlight.removeEventListener("transitionend", onTransitionEnd)
         }
 
