@@ -37,7 +37,7 @@ body {
 }
 
 
-/* va devoir adapter la navbar en fonction du media */
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -48,12 +48,14 @@ body {
     align-items: center;
     height: 100%;
     padding: 1px;
+    position: relative;
 }
 
 
 .navbar .active {
     background-color: rgb(75, 72, 66);
     color: white;
+    transition: color 0.2s ease;
 }
 
 
@@ -74,6 +76,27 @@ body {
     padding: 0 0.8rem 0 0.8rem;
     cursor: pointer;
 }
+
+
+.nav-highlight {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0; /* sera réglé en JS */
+    background-color: rgb(75, 72, 66);
+    border-radius: 1.2rem;
+    z-index: 0;
+    transition: all 0.25s ease-out;
+}
+
+.navbar .class {
+    position: relative;
+    z-index: 1; /* les boutons passent au-dessus */
+}
+
+
+
 
 
 .content {
