@@ -23,7 +23,7 @@ navbarElements.forEach((el) => {
 
 
 navbarElements.forEach((el) => {
-    el.addEventListener("onClick", () => {
+    el.addEventListener("pointerdown", () => {
 
         //partie navbar
         el.classList.add("active")
