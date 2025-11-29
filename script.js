@@ -23,7 +23,7 @@ navbarElements.forEach((el) => {
 
 
 navbarElements.forEach((el) => {
-    el.addEventListener("touchend", () => {
+    el.addEventListener("onClick", () => {
 
         //partie navbar
         el.classList.add("active")
