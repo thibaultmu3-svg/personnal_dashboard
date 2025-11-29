@@ -9,13 +9,14 @@ navbarElements.forEach((el) => {
         navbar_active.classList.remove("active")
 
         //partie content
-        const new_content = document.querySelector(".content.active")
-        console.log(new_content)
+        const new_content = document.querySelector(`.${el.id}`)
+        new_content.classList.add("active")
 
-        const old_content = document.getElementById(navbar_active.id)
+        const old_content = document.querySelector(`.${navbar_active.id}`)
+        console.log(old_content)
         old_content.classList.remove("active")
 
         navbar_active = el
     })
 })
-// pas tres correct je pense
+

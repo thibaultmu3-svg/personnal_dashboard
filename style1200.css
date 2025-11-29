@@ -5,7 +5,7 @@
         align-items: center;
     }
 
-    .header .settings {
+    .header .settings {             
         display: flex;
         align-items: center;
     }
@@ -15,7 +15,7 @@
     }
 
 
-    .content.home {
+    .content.home.active {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;

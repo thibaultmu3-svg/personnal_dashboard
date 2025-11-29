@@ -76,13 +76,11 @@ body {
 }
 
 
-/* encore style la partie navbar*/
-
 .content {
     display: none;
 }
 
-
+    
 .content.active {
     display: block;
 }
