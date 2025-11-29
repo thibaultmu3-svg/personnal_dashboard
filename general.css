@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Montserra',Arial, sans-serif;
     color: rgb(75, 72, 66);
+    user-select: none;
 }
 
 /* inchangé */
