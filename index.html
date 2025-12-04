@@ -22,6 +22,7 @@
             <div id="study"   class="class">study</div>
             <div id="calendar"class="class">calendar</div>
             <div id="todo"   class="class">to-do</div>
+            <div id="statistiques"   class="class">statistiques</div>
         </div>
         <div class="settings">
             <!-- logo -->
@@ -33,13 +34,13 @@
 
         <div class="card" id="welcom" style="grid-area: box1">
             <h1>Welcom,</h1>
-            <h5 id="Name">Name</h5>
-            <p class="todays-date">We are the <span id="datum">25 november.</span></p>
+            <h5 id="Name">Thibault</h5>
+            <p class="todays-date">Today is the <span id="datum">5 december.</span></p>
         </div>
 
         <div class="card" id="photo1" style="grid-area: box2">
             <!-- trouver une image plus interessante que ca  -->
-             <img src="/UI/UX_inspi/1356747.jpeg" alt="">
+             <!-- <img src="/UI/UX_inspi/1356747.jpeg" alt=""> -->
         </div>
 
         <div class="card" id="day" style="grid-area: box3">
@@ -48,8 +49,52 @@
         </div>
         
         <div class="card" id="stats" style="grid-area: box4">
-            
-            <div class="graph"></div>
+            <div class="graph">
+                <div class="column-day">
+                    <div class="day">L</div>
+                    <div class="progress"></div>
+                </div>
+                <div class="column-day">
+                    <div class="day">M</div>
+                    <div class="progress"></div>
+                </div>
+                <div class="column-day">
+                    <div class="day">M</div>
+                    <div class="progress"></div>
+                </div>
+                <div class="column-day">
+                    <div class="day">J</div>
+                    <div class="progress" ></div>
+                </div>
+                <div class="column-day">
+                    <div class="day">V</div>
+                    <div class="progress"></div>
+                </div>
+                <div class="column-day">
+                    <div class="day">S</div>
+                    <div class="progress"></div>
+                </div>
+                <div class="column-day">
+                    <div class="day">D</div>
+                    <div class="progress"></div>
+                </div>
+                
+                <div class="column-day">
+                    <div class="day"></div>
+                    <div class="echelle">
+                        <p>‾</p>
+                        <p>‾</p>
+                        <p>‾</p>
+                        <p>‾</p>
+                        <p>‾</p>
+                        <p>‾</p>
+                        <p>‾</p>
+                        <p>‾</p>
+                        <p>‾</p>
+                        <p>‾</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="card" id="week" style="grid-area: box5">
@@ -74,6 +119,10 @@
 
     <div class="content todo">
         hello
+    </div>
+
+    <div class="content statistiques">
+        helloo
     </div>
     <script src="script.js"></script>
 </body>

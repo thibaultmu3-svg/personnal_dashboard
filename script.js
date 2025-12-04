@@ -1,7 +1,16 @@
 const navbarElements = document.querySelectorAll(".class")
 let navbar_active = document.querySelector(".class.active")
 const highlight = document.querySelector(".nav-highlight")
+const days_stats = document.querySelectorAll(".progress")
+const datum = document.getElementById("datum")
+const date_jour_nbr = new Date()
 
+const months = ["january", "february", "march","april","mai","june","july","augustus","september","october","november","december"]
+
+//pour la date 
+datum.innerHTML = date_jour_nbr.getDate() + " " + months[date_jour_nbr.getMonth()]
+
+// partie navbar 
 moveHighlight(navbar_active)
 
 navbarElements.forEach((el) => {
@@ -39,3 +48,12 @@ function moveHighlight(el) {
     highlight.style.width  = `${el.offsetWidth}px`
     highlight.style.left   = `${el.offsetLeft}px`
 }
+
+
+// pour le graph
+days_stats.forEach((day) => {
+    const nombre_heures = Math.floor(Math.random()*10);
+    const pourcentage = nombre_heures * 10;
+
+    day.style.height = pourcentage + "%";
+})
