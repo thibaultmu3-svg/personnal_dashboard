@@ -281,36 +281,13 @@ svg circle {
     stroke-width: 20px;
     transform: translate(5px, 5px);
     stroke-linecap: round;
-    stroke-dasharray: 500; /* longueur totale*/
-    stroke-dashoffset: 500; /* commence completement vide*/
-    /* 440 du au perimetre de mon cercle*/
-
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    transition: stroke-dashoffset ease 1.4s;
 }
 
-/* pour le cercle gris dans le fond*/
+
 svg circle:nth-child(1) {
     stroke-dashoffset: 0;
-    stroke: rgb(194, 190, 178);
-}
-
-
-svg.day circle:nth-child(2) {
-    animation: circle_day 2s forwards;
-}
-
-svg.week circle:nth-child(2) {
-    animation: circle_week 2s forwards;
-}
-
-@keyframes circle_day {
-    to {
-        stroke-dashoffset:250;
-    }
-}
-
-
-@keyframes circle_week {
-    to {
-        stroke-dashoffset:350;
-    }
+    stroke: rgb(223, 218, 206);
 }

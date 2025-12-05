@@ -7,7 +7,9 @@ const date_jour_nbr = new Date()
 objectif_card = document.querySelector(".objectifs.card")
 todo_list = document.querySelector(".todo-list")
 
-const months = ["january", "february", "march","april","mai","june","july","augustus","september","october","november","december"]
+const months = ["january", "february", "march", "april", "mai", "june", "july", "augustus", "september", "october", "november", "december"]
+
+adapt_progress_circle()
 
 //pour la date 
 datum.innerHTML = date_jour_nbr.getDate() + " " + months[date_jour_nbr.getMonth()]
@@ -44,21 +46,40 @@ navbarElements.forEach((el) => {
         navbar_active = el
 
 
-        // pour obtenir la taille de l element
+        adapt_progress_circle()
     })
 })
 
 
 function moveHighlight(el) {
-    highlight.style.width  = `${el.offsetWidth}px`
-    highlight.style.left   = `${el.offsetLeft}px`
+    highlight.style.width = `${el.offsetWidth}px`
+    highlight.style.left = `${el.offsetLeft}px`
 }
 
 
 // pour le graph
 days_stats.forEach((day) => {
-    const nombre_heures = Math.floor(Math.random()*10);
+    const nombre_heures = Math.floor(Math.random() * 10);
     const pourcentage = nombre_heures * 10;
 
     day.style.height = pourcentage + "%";
 })
+
+
+function adapt_progress_circle() {
+    const day_circle = document.getElementById("day");
+    const week_circle = document.getElementById("week");
+
+    //recupérer la quantité de taches accomplies sur le nombre de tache totales 
+    // faire ca avec du json
+
+    day_circle.style.strokeDashoffset = 500;
+    week_circle.style.strokeDashoffset = 500;
+
+    setTimeout(() => {
+        day_circle.style.strokeDashoffset = 400;
+        week_circle.style.strokeDashoffset = 150;
+    }, 20);
+}
+
+
