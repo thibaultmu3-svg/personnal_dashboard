@@ -211,3 +211,43 @@ body {
         height: 100;
     }
 }
+
+.study .objectifs,.timer {
+    padding: 1rem;
+}
+
+.objectifs h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    font-size: 2rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+.objectifs .todo-list {
+    background-color: rgba(0,0,0,0.07);
+    width: 100%;
+    border-radius: 1rem;
+    padding: 5px;
+    list-style: none;
+    overflow: auto;
+    flex-grow: 1;
+}
+
+
+.todo-list::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    border-radius: 4px;
+}
+
+.todo-list::-webkit-scrollbar-thumb {
+    background-color: #cbd5e0;
+    border-radius: 4px;
+}
+
+.todo-list::-webkit-scrollbar-thumb:hover {
+    background-color: #2163b9;
+}

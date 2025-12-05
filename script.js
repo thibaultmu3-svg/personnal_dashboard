@@ -4,6 +4,8 @@ const highlight = document.querySelector(".nav-highlight")
 const days_stats = document.querySelectorAll(".progress")
 const datum = document.getElementById("datum")
 const date_jour_nbr = new Date()
+objectif_card = document.querySelector(".objectifs.card")
+todo_list = document.querySelector(".todo-list")
 
 const months = ["january", "february", "march","april","mai","june","july","augustus","september","october","november","december"]
 
@@ -40,6 +42,13 @@ navbarElements.forEach((el) => {
         old_content.classList.remove("active")
 
         navbar_active = el
+
+
+        // pour obtenir la taille de l element
+        console.log(objectif_card.offsetHeight);
+
+        const hauteur = Math.round(objectif_card.offsetHeight * 0.8);
+        todo_list.style.height = hauteur + "px";
     })
 })
 
