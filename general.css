@@ -113,6 +113,7 @@ body {
 .card {
     background-color: rgb(248, 247, 240);
     border-radius: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .home #welcom,#day,#week,#stats {
@@ -133,13 +134,6 @@ body {
     margin-bottom: 1rem;
     cursor: default;
 } 
-
-
-.circle {
-    aspect-ratio: 1;
-    height: 100px;
-    background-color: red;
-}
 
 
 .graph {
@@ -238,16 +232,85 @@ body {
 }
 
 
-.todo-list::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     background-color: #f1f1f1;
     border-radius: 4px;
 }
 
-.todo-list::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background-color: #cbd5e0;
     border-radius: 4px;
 }
 
-.todo-list::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover {
     background-color: #2163b9;
+}
+
+
+
+.timer h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    font-size: 2rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card:hover {
+    transform: scale(1.01);
+    box-shadow: 1px 5px 8px rgba(0,0,0,0.2);
+}
+
+
+
+
+svg {
+    height: 200px;
+    aspect-ratio: 1;
+}
+
+
+svg circle {
+    r: 80px;
+    cx: 100px;
+    cy: 100px;
+    fill: none;
+    stroke: rgb(75, 72, 66);
+    stroke-width: 20px;
+    transform: translate(5px, 5px);
+    stroke-linecap: round;
+    stroke-dasharray: 500; /* longueur totale*/
+    stroke-dashoffset: 500; /* commence completement vide*/
+    /* 440 du au perimetre de mon cercle*/
+
+}
+
+/* pour le cercle gris dans le fond*/
+svg circle:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: rgb(194, 190, 178);
+}
+
+
+svg.day circle:nth-child(2) {
+    animation: circle_day 2s forwards;
+}
+
+svg.week circle:nth-child(2) {
+    animation: circle_week 2s forwards;
+}
+
+@keyframes circle_day {
+    to {
+        stroke-dashoffset:250;
+    }
+}
+
+
+@keyframes circle_week {
+    to {
+        stroke-dashoffset:350;
+    }
 }

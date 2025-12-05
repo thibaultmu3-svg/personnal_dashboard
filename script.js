@@ -45,10 +45,6 @@ navbarElements.forEach((el) => {
 
 
         // pour obtenir la taille de l element
-        console.log(objectif_card.offsetHeight);
-
-        const hauteur = Math.round(objectif_card.offsetHeight * 0.8);
-        todo_list.style.height = hauteur + "px";
     })
 })
 

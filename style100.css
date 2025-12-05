@@ -56,4 +56,8 @@
         grid-template-rows: 1fr 1fr;
         gap: 5px;
     }
+
+    .objectifs .todo-list {
+        max-height: 200px;
+    }
 }
