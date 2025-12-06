@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="general.css">
-    <link rel="stylesheet" href="style100.css">
-    <link rel="stylesheet" href="style500.css">
-    <link rel="stylesheet" href="style1200.css">
+    <link rel="stylesheet" href="CSS/general.css">
+    <link rel="stylesheet" href="CSS/style100.css">
+    <link rel="stylesheet" href="CSS/style500.css">
+    <link rel="stylesheet" href="CSS/style1200.css">
 </head>
 
 <body>
@@ -42,13 +42,22 @@
              <!-- <img src="/UI/UX_inspi/1356747.jpeg" alt=""> -->
         </div>
 
-        <div class="card" style="grid-area: box3">
+        <div class="card progression-circle" style="grid-area: box3">
             
             <div class="circle">
                 <svg class="day">
                     <circle></circle>
                     <circle id="day"></circle>
                 </svg>
+            </div>
+            <div class="day circle-todo-list">
+                <h4>Objectifs du jour</h4>
+                <ul>
+                    <li>
+                        <input type="checkbox">
+                        Finir Tp algebre
+                    </li>
+                </ul>
             </div>
         </div>
         
@@ -101,13 +110,31 @@
             </div>
         </div>
 
-        <div class="card" style="grid-area: box5">
+        <div class="card  progression-circle" style="grid-area: box5">
             
             <div class="circle">
                 <svg class="week">
                     <circle></circle>
                     <circle id="week"></circle>
                 </svg>
+            </div>
+            <div class="week circle-todo-list">
+                <h4>Objectifs de la semaine</h4>
+                <ul>
+                    <li>
+                        <input type="checkbox">
+                        Finir Tp algebre
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        Finir Tp algebre
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        Finir Tp algebre
+                    </li>
+                    
+                </ul>
             </div>
         </div>
 
@@ -123,7 +150,7 @@
             <h3>To-do</h3>
             <div class="todo-list">
                 <!-- ici mettre les todos du jour ou plus (semaine) -->
-                <a href="main.pdf" target="_blank">LINK </a>
+                <a href="Complements/main.pdf" target="_blank">LINK </a>
             </div>
         </div>
         <div class="timer card">

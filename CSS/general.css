@@ -264,6 +264,19 @@ body {
 }
 
 
+/* cercle */
+.progression-circle {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.circle {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 svg {
@@ -290,4 +303,34 @@ svg circle {
 svg circle:nth-child(1) {
     stroke-dashoffset: 0;
     stroke: rgb(223, 218, 206);
+}
+
+
+
+/* liste todo*/
+.circle-todo-list {
+    padding: 1rem;
+}
+
+
+.circle-todo-list h4 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.8rem;
+    font-weight: 550;
+    font-size: 1.4rem;
+}
+
+
+.circle-todo-list ul {
+    list-style: none;
+    margin-left: 0.5rem;
+}
+
+.circle-todo-list ul li {
+    margin-bottom: 8px;
+}
+
+
+.circle-todo-list ul li input {
+    background-color: red;
 }
